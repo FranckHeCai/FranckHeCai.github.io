@@ -13,6 +13,14 @@ body {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+.listcard{
+    width: 100px;
+    height: 50px;
+    background-color: lightgrey;
+}
+.listcard:hover{
+    transform: scale(1.1);
+}
 
 header {
     text-align: center;
