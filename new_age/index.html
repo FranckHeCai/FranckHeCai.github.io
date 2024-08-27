@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/franck_cai_style.css">
+    <script src="js/franck_cai_p03.js"></script>
+    <title>Franck Cai P03</title>
+</head>
+<body onload="actualizar()">
+    
+    <main>
+        <div id="foto">
+            <div class="fotodiv">
+                <p>Our website is under construction, but we are ready to go! We are preparing something amazing and exciting for you. Special surprise for our subscribers only</p> 
+            </div>
+        </div>
+        <div id="newsletter">
+            <div><p class="meet">Let's meet</p></div>
+                <div><h1>NEW START IS COMING</h1></div>
+                    <div><p>Notify Me When It's Reader</p></div>
+                        <div class="toggle">
+                            <label class="switch">
+                                <input type="checkbox" onclick="toggle()">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    <div>
+                    <form name="formulario" onsubmit="successfull();return false;">
+                        <p id="email_container" class="formu ">
+                            <input id="email" name="email" type="email" placeholder="Enter a valid email adress"/>
+                            <button id="submit" type="submit">NOTIFY ME</button>
+                        </p>
+                        <p class="enviado"></p>
+                            
+                    </form> 
+                </div>
+        </div>
+    </main>
+</body>
+</html>
