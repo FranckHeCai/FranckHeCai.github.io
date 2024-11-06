@@ -10,10 +10,25 @@ body {
     font-family: Helvetica, sans-serif;
     background-color: var(--main-gray);
     color: var(--main-white);
+    margin: 0;
+    padding: 0;
     
 }
-.project-section{
-    padding: 20px;
+h2{
+    color: var(--main-blue);
+}
+section{
+    width: 100%;
+}
+.section{
+    margin: 100px 0;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 /* NAME Section */
 .name-section{
@@ -37,16 +52,26 @@ body {
 }
 #pp-picture{
     display: block;
-    width: 100%;
+    width: 60%;
     max-width: 300px;
     height: auto;
     border-radius: 400px;
     /* border: 2px solid var(--main-blue); */
-    margin: 20px 0;
+    margin: 30px 0;
 }
 
 /* TOOLS Section */
-
+.tools{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px auto 0 auto;
+    width: 80%;
+}
+i{
+    font-size: 64px;
+    color: var(--main-white);
+}
 
 /* PROJECT Section */
 .workcard{
@@ -54,6 +79,7 @@ body {
     height: 300px;
     background-color: var(--main-gray);
     border-radius: 5px;
+    border: 2px solid var(--main-white);
     overflow: hidden;
     align-items: center;
     text-decoration: none;
@@ -86,13 +112,12 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 20px;
-    width: 100%;
+    width: 80%;
     max-width: 1280px;
     margin: 30px auto;
 }
 header {
     text-align: center;
-    margin-bottom: 20px;
 }
 h1, h2, h3{
     text-align: center;
@@ -101,7 +126,7 @@ h2{
     font-size: 2rem;
 }
 .division{
-    border-bottom: 3px solid var(--main-white);
+    border-bottom: 3px solid var(--main-blue);
 }
 .profile-name{
     font-family: 'Courier New', Courier, monospace, sans-serif;
@@ -111,3 +136,60 @@ h2{
     color: var(--main-blue);
 }
 
+@media (max-width: 1000px) {
+    .name-box{
+        width: 70%;
+        
+    }
+}
+@media (max-width: 600px) {
+    .name-box{
+        width: 90%;
+    }
+    .name-box h1{
+        font-size: 20px;
+    }
+    .name-box h3{
+        font-size: 16px;
+    }
+    .profile-name{
+        font-size: 2rem;
+    }
+    i{
+        font-size: 48px;
+    }
+}
+@media (max-width: 400px) {
+    .work-container{
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 350px) {
+    .name-box{
+        width: 90%;
+    }
+    .name-box h1{
+        font-size: 14px;
+    }
+    .name-box h1, .name-box h2, .name-box h1, .name-box h3, .name-box .profile-name {
+        margin: 5px auto;
+    }
+    .name-box h3{
+        font-size: 12px;
+    }
+    .profile-name{
+        font-size: 18px;
+    }
+    #pp-picture{
+        width: 80%;
+    }
+    .project-section h2, .tools-section h2{
+        font-size: 24px;
+    }
+    .workcard{
+        height: 250px;
+    }
+    i{
+        font-size: 28px;
+    }
+}

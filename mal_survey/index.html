@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyAnimeList Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <main>
+        <h1 id="title">MyAnimeList Survey Form</h1>
+        <p id="description">Help us improve the platform by completing this survey!</p>
+        <form id="survey-form" action="post">
+          <fieldset>
+            <label id="name-label" for="firstname">Name <input id="name" name="firstname" type="text" placeholder="Enter your name" required/></label>
+            <label id="email-label" for="email">Email <input id="email" name="email" type="email" placeholder="Enter your email" required/></label>
+            <label id="number-label" for="number">Age <input id="number" name="age" type="number" min="12" max="100" placeholder="Enter your age" required/></label>
+            <label class="title" for="watchtime">How much anime do you watch?
+            <select id="dropdown" name="dropdown">
+              <option value="">(select one)</option>
+              <option value="1">Twice or less a week</option>
+              <option value="2">3 times a week</option>
+              <option value="3">4 times a week</option>
+              <option value="4">5 or 6 times a week</option>
+              <option value="5">I'm a weeb I watch anime everyday</option>
+            </select>
+          </label>
+          </fieldset>
+          <fieldset>
+            <label class="title">Would you recommend MyAnimeList?</label>
+            <label for="yes"><input class="inline" id="yes" type="radio" name="recommend" value="yes" checked/>Yes</label>
+            <label for="no"><input class="inline" id="no" type="radio" name="recommend" value="no"/>No</label>
+            <label for="maybe"><input class="inline" id="maybe" type="radio" name="recommend" value="maybe"/>Maybe</label>
+  
+            <label class="title" for="feature">What MyAnimeList feature about do you like most?</label>
+            <select id="feature" name="feature">
+              <option value="">(select a feature)</option>
+              <option value="1">The interface</option>
+              <option value="2">The community</option>
+              <option value="3">Chatting with friends</option>
+              <option value="4">Creating lists</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <label class="title">What would you improve about the platform?</label>
+            <label for="interface"><input class="inline" id="interface" type="checkbox" name="interface" value="interface"/>Interface</label>
+            <label for="anime"><input class="inline" id="anime" type="checkbox" name="anime" value="anime" />Add more anime</label>
+            <label for="interaction"><input class="inline" id="interaction" type="checkbox" name="interaction" value="interaction"/>Interactions</label>
+            <label for="list"><input class="inline" id="list" type="checkbox" name="list" value="list"/>Create more lists</label>
+            <label for="noneed"><input class="inline" id="noneed" type="checkbox" name="noneed" value="noneed"/>The platform doesn't need improvements</label>
+            <label class="title" for="moment">What is your favourite anime moment?
+            <textarea id="moment" name="moment" rows="8" cols="30" placeholder="write your comment here"></textarea>
+          </label>
+          </fieldset>
+          <input id="submit" type="submit" value="Submit" />
+        </form>
+      </main>
+      <footer>
+      </footer>
+</body>
+</html>

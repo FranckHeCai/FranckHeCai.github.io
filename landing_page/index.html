@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Spotify Landing Page</title>
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+        <img id="header-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Spotify_logo_with_text.svg/2560px-Spotify_logo_with_text.svg.png" alt="brand-logo">
+        </div>
+        <nav id="nav-bar">
+          <ul>
+            <li><a class="nav-link" href="#about">About Spotify</a>
+            </li>
+            <li><a class="nav-link" href="#how-to-upgrade">Upgrade to Premium</a>
+            </li>
+            <li><a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="section-container">
+        <section id="about">
+          <h2>ABOUT SPOTIFY</h2>
+          <p>Spotify’s platform revolutionized music listening forever when we launched in 2008. Our move into podcasting brought innovation and a new generation of listeners to the medium, and in 2022 we entered the next audio market primed for growth with the addition of audiobooks.
+  
+  Today, more listeners than ever can discover, manage and enjoy more than 100 million tracks, 6 million podcasts titles, and 350,000 audiobooks a la carte on Spotify. We are the world’s most popular audio streaming subscription service with more than 626 million users, including 246 million subscribers in more than 180 markets.</p>
+        </section>
+        <section id="how-to-upgrade">
+          <h2>UPGRADING TO PREMIUM</h2>
+          <iframe id="video" class="video" src="https://www.youtube.com/embed/nq6dMw6lg0s?si=0CHdemE7nNC6wQzQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+        <section id="pricing">
+          <h2>YOUR CHOICE YOUR PLAN</h2>
+          <p>Choose a Premium plan and listen to music without ads and without limits on phones, speakers and other devices. Pay in various ways. Cancel whenever you want.
+  </p>
+        <div class="price-container">
+          <div class="price-plan">
+            <h2 class="individual">Individual Plan</h2>
+            <ul>
+              <li><p>1 Premium account</p></li>
+              <li><p>
+  15 hours/month of listening time from our audiobooks subscriber catalog</p></li>
+  <li><p>Cancel anytime</p></li>
+            </ul>
+            <button class="price default-button bold price-individual">10,99€/month</button>
+          </div>
+          <div class="price-plan">
+            <h2 class="student">Student Plan</h2>
+            <ul>
+              <li><p>1 verified Premium account</p></li>
+              <li><p>Discount for eligible students</p></li>
+              <li><p>Access to Hulu</p></li>
+              <li><p>Cancel anytime</p></li>
+            </ul>
+            <button class="price default-button bold price-student">5,99€/month</button>
+          </div>
+          <div class="price-plan ">
+            <h2 class="family">Family Plan</h2>
+            <ul>
+              <li><p>Up to 6 Premium account</p></li>
+              <li><p>Control content marked as explicit</p></li>
+              <li><p>Access to Spotify Kids</p></li>
+            
+              <li><p>Cancel anytime</p></li>
+            </ul>
+            <button class="price default-button bold price-family">17,99€/month</button>
+          </div>
+        </div>
+  
+        </section>
+        <section id="newsletter">
+          <h2>SUBSCRIBE OUR NEWSLETTER</h2>
+          <form id="form" method="POST" action="https://www.freecodecamp.com/email-submit">
+            <input id="email" name="email" type="email" placeholder="Write your email here" required />
+            <input id="submit" class="default-button bold" type="submit" value="Send" />
+          </form>
+        </section>
+      </div>
+      <footer>
+        <p>**the logo and video used are not mine and belong to their owner**</p>
+      </footer>
+</body>
+</html>

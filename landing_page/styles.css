@@ -1,0 +1,274 @@
+:root{
+    --background1: #000;
+    --background2: #121212;
+    --background3: #242424;
+    --text-green: #1db954;
+    --text-white: white;
+    --text-pink: #ffd2d7;
+    --text-purple: #c4b1d4;
+    --text-blue: #a5bbd1;
+  }
+  *{
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+  }
+  h1, h2{
+      text-align: center;
+  }
+  .individual{
+    color: var(--text-pink);
+  }
+  .student{
+    color: var(--text-purple);
+  }
+  .family{
+    color: var(--text-blue);
+  }
+  body{
+    background-color: var(--background2);
+    color: var(--text-white);
+    margin: 0;
+    padding: 0;
+  }
+  header{
+    display: flex;
+    position: fixed;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top:0;
+    background-color: var(--background1);
+  }
+  footer{
+    padding: 15px;
+    background-color: var(--background1);
+    text-align: center;
+  }
+  .logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #header-img{
+    width: 100%;
+    max-width: 250px;
+    min-width: 100px;
+  }
+  a{
+    text-decoration: none;
+    color: var(--text-white);
+    font-weight: bold;
+  }
+  a:hover{
+  color: var(--text-green);
+  }
+  nav > ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  }
+  nav ul li{
+    margin: 0 10px;
+  }
+  .section-container{
+    margin: 150px auto 0 ;
+    width: 90%;
+  }
+  section{
+    margin-bottom: 50px;
+  }
+  section h2{
+    color: var(--text-green);
+  }
+  section p{
+    text-align: justify;
+  }
+  
+  .video{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 750px;
+    height: 420px;
+  }
+  
+  .price-container{
+    display: flex;
+    flex-direction: row;
+  }
+  .price-plan{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(100%/3);
+    margin: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    background-color: var(--background3);
+  }
+  .price-plan p{
+    text-align: left;
+    font-size: 14px;
+  }
+  .price-plan ul{
+    padding-right: 10px;
+  }
+  .price{
+    width:90%;
+    text-align: center;
+    padding: 15px 0px;
+    margin: 0 auto;
+    color: #000;
+  }
+  .price-individual{
+    background-color: var(--text-pink);
+  }
+  .price-student{
+    background-color: var(--text-purple);
+  }
+  .price-family{
+    background-color: var(--text-blue);
+  }
+  button{
+    border: none;
+    transition: .2s;
+  }
+  button:hover{
+    transform: scale(1.05);
+  }
+  button:focus{
+    outline: 3px solid var(--text-white);
+  }
+  
+  input{
+    display:block;
+    margin: 20px auto;
+  }
+  
+  #newsletter input[type='email'] {
+      max-width: 500px;
+      height: 5vh;
+      width: 100%;
+      padding: 5px;
+      border: none;
+      border-radius: 5px;
+  }
+  #newsletter input[type='email']:focus {
+      outline: 3px solid var(--text-green);
+  }
+  #newsletter input[type='submit'] {
+      max-width: 150px;
+      height: 35px;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background-color: var(--text-green);
+      transition: .3s;
+  }
+  #newsletter input[type='submit']:hover{
+    transform: scale(1.05);
+  }
+  .default-button{
+    border-radius: 100px;
+  }
+  .bold{
+    font-weight: bold;
+  }
+  
+  @media (max-width: 1000px){
+    .price-container{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .price-plan{
+    width: 80%;
+  }
+  }
+  
+  @media (max-width: 700px){
+    nav > ul {
+      flex-direction: column;
+    }
+    nav ul li{
+    margin: 5px 10px;
+    }
+    .video{
+    max-width: 400px;
+      height: 220px;
+    }
+    footer{
+        padding: 5px;
+    }
+    footer p{
+        font-size: 12px;
+    }
+    
+  }
+  @media (max-width: 500px){
+    header{
+      flex-direction:column;
+    }
+    #header-img{
+    width: 100%;
+    max-width: 100px;
+    }
+  .price-plan{
+    width: 100%;
+  }
+    nav > ul {
+      flex-direction: row;
+      text-align: center;
+    }
+    nav ul li{
+    font-size: 14px;
+    }
+    nav{
+      margin-top: 20px;
+    }
+    h2{
+      font-size: 20px;
+    }
+  }
+  @media (max-width: 350px){
+    h2{
+      font-size: 16px;
+    }
+    section{
+    margin-bottom: 10px;
+  }
+  header{
+      flex-direction:column;
+    }
+    #header-img{
+    width: 100%;
+    max-width: 100px;
+    }
+  .price-plan{
+    width: 100%;
+  }
+    nav > ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+    nav ul li{
+    font-size: 10px;
+    margin: 3px 5px;
+    }
+    nav{
+      margin-top: 20px;
+    }
+    .video{
+      height: 130px;
+    }
+    section p{
+    text-align: left;
+    font-size: 12px;
+  }
+  }
