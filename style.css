@@ -1,5 +1,6 @@
 :root{
     --main-blue: #2c82c9;
+    --main-black: #121212;
     --main-gray: #2e2e2e;
     --main-white: #DFF2EB;
 }
@@ -14,14 +15,24 @@ body {
     padding: 0;
     
 }
+header {
+    text-align: center;
+}
+h1, h2, h3, p{
+    text-align: center;
+}
 h2{
+    font-size: 2rem;
     color: var(--main-blue);
+}
+.division{
+    border-bottom: 3px solid var(--main-blue);
 }
 section{
     width: 100%;
 }
 .section{
-    margin: 100px 0;
+    margin: 50px 0;
 }
 .main-container{
     display: flex;
@@ -59,6 +70,13 @@ section{
     /* border: 2px solid var(--main-blue); */
     margin: 30px 0;
 }
+.profile-name{
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: var(--main-blue);
+}
 
 /* TOOLS Section */
 .tools{
@@ -68,15 +86,29 @@ section{
     margin: 30px auto 0 auto;
     width: 80%;
 }
-i{
+.tools i{
     font-size: 64px;
-    color: var(--main-white);
+    color: var(--main-wite);
 }
 
 /* PROJECT Section */
+.project-section{
+    padding-bottom: 15px;
+}
+.project-section h3{
+    margin-top: 30px;
+}
+.work-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    width: 80%;
+    max-width: 1280px;
+    margin: 0px auto;
+}
+
 .workcard{
     width: 100%;
-    height: 300px;
     background-color: var(--main-gray);
     border-radius: 5px;
     border: 2px solid var(--main-white);
@@ -85,9 +117,6 @@ i{
     text-decoration: none;
     color: var(--main-white);
     transition: 0.3s ease-in-out;
-}
-.workcard p{
-    text-align: center;
 }
 .workcard h3{
     margin: 10px 0;
@@ -108,33 +137,47 @@ i{
     color: var(--main-blue);
 
 }
-.work-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 20px;
+
+
+/* CONTACT LIST */
+.contact{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--main-black);
+    gap: 10px;
+    padding: 10px;
+  }
+  .contact-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 80%;
-    max-width: 1280px;
-    margin: 30px auto;
-}
-header {
-    text-align: center;
-}
-h1, h2, h3{
-    text-align: center;
-}
-h2{
-    font-size: 2rem;
-}
-.division{
-    border-bottom: 3px solid var(--main-blue);
-}
-.profile-name{
-    font-family: 'Courier New', Courier, monospace, sans-serif;
-    font-style: italic;
-    font-weight: bold;
-    font-size: 2.5rem;
+  }
+  .contact-list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem 0;
+  }
+  .contact-list i{
+    font-size: 3rem;
+  }
+  .contact-list a{
+    text-decoration: none;
+    color: var(--main-white);
+    transition: .2s
+  }
+  .contact-list a:hover{
     color: var(--main-blue);
-}
+    transform: scale(1.1);
+  }
 
 @media (max-width: 1000px) {
     .name-box{
@@ -155,8 +198,11 @@ h2{
     .profile-name{
         font-size: 2rem;
     }
-    i{
+    .tools i{
         font-size: 48px;
+    }
+    .section{
+        margin: 35px auto;
     }
 }
 @media (max-width: 400px) {
@@ -174,10 +220,13 @@ h2{
     .name-box h1, .name-box h2, .name-box h1, .name-box h3, .name-box .profile-name {
         margin: 5px auto;
     }
-    .name-box h3{
+    .name-box h3, .contact-text p{
         font-size: 12px;
     }
-    .profile-name{
+    h3{
+        font-size: 18px;
+    }
+    .profile-name, .contact-text h1{
         font-size: 18px;
     }
     #pp-picture{
@@ -186,10 +235,16 @@ h2{
     .project-section h2, .tools-section h2{
         font-size: 24px;
     }
-    .workcard{
-        height: 250px;
+    .workcard h3{
+        font-size: 14px;
     }
-    i{
+    .tools i, .contact-list i{
         font-size: 28px;
+    }
+    .section{
+        margin: 10px auto;
+    }
+    .contact{
+        gap: 0px;
     }
 }
