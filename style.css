@@ -52,23 +52,26 @@ section{
     /* background-image: linear-gradient(62deg, var(--main-blue) , var(--main-gray)); */
 }
 .name-box{
-    width: 50%;
-    box-shadow: 0px 0px 70px 5px var(--main-blue);
+    width: 60%;
+    box-shadow: 0px 0px 20px 5px var(--main-blue);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    gap: 20px;
     padding: 30px;
+    h1,h2,h3, img{
+        margin: 0;
+    }
 }
 #pp-picture{
     display: block;
-    width: 60%;
+    max-width: 40%;
     max-width: 300px;
     height: auto;
     border-radius: 400px;
     /* border: 2px solid var(--main-blue); */
-    margin: 30px 0;
 }
 .profile-name{
     font-family: 'Courier New', Courier, monospace, sans-serif;
