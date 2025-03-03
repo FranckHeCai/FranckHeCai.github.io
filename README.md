@@ -1,6 +1,8 @@
 # Franck Cai - Web Developer Portfolio
 
-![Profile Picture](img/Foto%20Franck%20Cai.png)
+<div style="text-align: center;">
+  <img src="img/Foto%20Franck%20Cai.png" style="border-radius: 100%;" alt="Profile Picture" width="300" />
+</div>
 
 Welcome to my portfolio! Here you can find information about me, the tools I use, and some of the projects I've worked on.
 
