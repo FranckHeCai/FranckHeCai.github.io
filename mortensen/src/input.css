@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Gilroy";
+  src: url('./assets/fonts/Gilroy-Regular.woff2') format('woff2'),
+       url('./assets/fonts/Gilroy-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./assets/fonts/Gilroy-Bold.woff2') format('woff2'),
+    url('./assets/fonts/Gilroy-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@theme {
+  --font-gilroy: 'Gilroy', sans-serif;
+  --color-black: #2e2e2e; 
+  --color-gray100: #f6f6f6;
+  --color-gray200: #888888;
+  --color-gray300: #3c3c3c;
+}
+
+.slide-menu{
+  transform: translateX(100%);
+}
+
+.slide-menu.open{
+  transform: translateX(0);
+}

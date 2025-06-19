@@ -1,0 +1,11 @@
+body {
+  @apply relative w-full antialiased;
+}
+
+::-moz-selection {
+  @apply text-white bg-black;
+}
+
+::selection {
+  @apply text-white bg-black;
+}
