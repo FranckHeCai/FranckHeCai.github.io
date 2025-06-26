@@ -94,12 +94,30 @@ section{
     color: var(--main-wite);
 }
 
+.icon{
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  aspect-ratio: 1/1;
+}
+
+.tech-title{
+    margin: 25px  0 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    .icon{
+        height: 48px;
+        width: 48px;
+    }
+}
+
+
+
 /* PROJECT Section */
 .project-section{
     padding-bottom: 15px;
-}
-.project-section h3{
-    margin-top: 30px;
 }
 .work-container{
     display: grid;
@@ -112,6 +130,7 @@ section{
 
 .workcard{
     width: 100%;
+    max-width: 380px;
     background-color: var(--main-gray);
     border-radius: 5px;
     border: 2px solid var(--main-white);
@@ -189,6 +208,10 @@ section{
     }
 }
 @media (max-width: 600px) {
+    .icon {
+            width: 32px;
+            height: 32px;
+        }
     .name-box{
         width: 90%;
     }
